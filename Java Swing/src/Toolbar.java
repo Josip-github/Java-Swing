@@ -12,7 +12,7 @@ public class Toolbar extends JPanel {
 		helloButton = new JButton("Hello");
 		goodbyeButton = new JButton("Goodbye");
 		
-		setLayout(new FlowLayout());
+		setLayout(new FlowLayout(FlowLayout.LEFT));
 		
 		add(helloButton);
 		add(goodbyeButton);
