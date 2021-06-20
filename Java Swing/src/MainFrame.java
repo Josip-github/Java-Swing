@@ -21,6 +21,7 @@ public class MainFrame extends JFrame {
 		btn = new JButton("Click me!");
 		toolbar = new Toolbar();
 		
+		toolbar.setTextPanel(textPanel);
 		
 		btn.addActionListener(new ActionListener() {
 
@@ -31,7 +32,6 @@ public class MainFrame extends JFrame {
 		
 		add(toolbar, BorderLayout.NORTH);
 		add(textPanel, BorderLayout.CENTER);
-		add(btn, BorderLayout.SOUTH);
 		
 		setSize(600, 500);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
