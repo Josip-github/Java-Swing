@@ -14,6 +14,12 @@ public class MainFrame extends JFrame {
 		
 		setLayout(new BorderLayout());
 		
+		textArea = new JTextArea();
+		btn = new JButton("Click me!");
+		
+		add(textArea, BorderLayout.CENTER);
+		add(btn, BorderLayout.SOUTH);
+		
 		setSize(600, 500);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setVisible(true);
