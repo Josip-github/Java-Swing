@@ -8,7 +8,7 @@ import javax.swing.JTextArea;
 
 public class MainFrame extends JFrame {
 
-	private JTextArea textArea;
+	private TextPanel textPanel;
 	private JButton btn;
 	
 	public MainFrame() {
@@ -16,18 +16,18 @@ public class MainFrame extends JFrame {
 		
 		setLayout(new BorderLayout());
 		
-		textArea = new JTextArea();
+		textPanel = new TextPanel();
 		btn = new JButton("Click me!");
 		
 		
 		btn.addActionListener(new ActionListener() {
 
 			public void actionPerformed(ActionEvent e) {
-				textArea.append("Hello\n");
+				//textArea.append("Hello\n");
 			}
 		});
 		
-		add(textArea, BorderLayout.CENTER);
+		add(textPanel, BorderLayout.CENTER);
 		add(btn, BorderLayout.SOUTH);
 		
 		setSize(600, 500);
